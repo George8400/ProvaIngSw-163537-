@@ -7,7 +7,20 @@ public class MyListUtil {
 	
 	public ArrayList<Integer> ordinaCrescente(ArrayList<Integer> numbers){
 		
+		for(int i = 0; i < numbers.size(); i++) {
+			for(int j = 0; j < numbers.size(); j++) {
+				if(i != j) {
+					if(numbers.get(i) < numbers.get(j)) {
+						Integer temp = numbers.get(i);
+						numbers.set(i, numbers.get(j));
+						numbers.set(j, temp);
+					}
+				}
+			}
+		}
 		
+		for(Integer i : numbers)
+			System.out.println(i + " ");
 		
 		return numbers;
 		
@@ -17,7 +30,20 @@ public class MyListUtil {
 	
 	public ArrayList<Integer> ordinaDecrescente(ArrayList<Integer> numbers){
 		
+		for(int i = 0; i < numbers.size(); i++) {
+			for(int j = 0; j < numbers.size(); j++) {
+				if(i != j) {
+					if(numbers.get(i) > numbers.get(j)) {
+						Integer temp = numbers.get(i);
+						numbers.set(i, numbers.get(j));
+						numbers.set(j, temp);
+					}
+				}
+			}
+		}
 		
+//		for(Integer i : numbers)
+	//		System.out.println(i + " ");
 		
 		return numbers;
 		
