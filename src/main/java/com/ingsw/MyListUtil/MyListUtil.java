@@ -19,9 +19,6 @@ public class MyListUtil {
 			}
 		}
 		
-		for(Integer i : numbers)
-			System.out.println(i + " ");
-		
 		return numbers;
 		
 	}
@@ -41,9 +38,6 @@ public class MyListUtil {
 				}
 			}
 		}
-		
-//		for(Integer i : numbers)
-	//		System.out.println(i + " ");
 		
 		return numbers;
 		
